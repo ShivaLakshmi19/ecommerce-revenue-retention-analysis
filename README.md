@@ -18,6 +18,10 @@ Python (pandas), SQL (SQLite), Power BI, Google Colab
 4. Exported clean files for a Power BI dashboard
 5. Wrote findings and recommendations
 
+## Dashboard
+![Sales overview](dashboard_sales.png)
+![Customers and delivery](dashboard_delivery.png)
+
 ## Key findings
 1. Scale: 96,470 delivered orders from 93,350 customers generated 13.2M in revenue (Brazilian reais), with an average order value of 137.
 2. Revenue is spread across categories: health_beauty (9.3%), watches_gifts (8.8%) and bed_bath_table (7.7%) lead, but the top 3 are only about 26% of revenue.
@@ -26,6 +30,7 @@ Python (pandas), SQL (SQLite), Power BI, Google Colab
 5. Late delivery sharply lowers reviews, and the damage grows with the delay: 4.29 (on time), 3.75 (1-3 days late), 2.30 (4-7 days late), 1.73 (8+ days late).
 6. Late orders are 8.1% of orders but account for 33.8% of all bad (1-2 star) reviews, about four times their share, and hold 1.16M (8.8%) of revenue.
 7. Customers whose first order was late repeat at 2.51%, versus 3.04% for on-time first orders. Delivery matters, but it does not explain the low retention on its own.
+8. Delivery performance varies widely by state: late-delivery rates range from about 5% in PR, MG and SP to over 20% in AL and MA, with most of the worst states in the north-east.
 
 ## Recommendations
 1. Prioritize severe delays (4+ days late): about 5,000 orders with an average review below 2.0.
@@ -33,7 +38,8 @@ Python (pandas), SQL (SQLite), Power BI, Google Colab
 3. Reduce dependence on Sao Paulo by testing growth campaigns in RJ and MG, the next two largest markets.
 4. Promote high-value categories like watches_gifts and cross-sell in high-volume, lower-value ones like bed_bath_table.
 5. Track repeat rate, late-delivery rate and average review monthly as core KPIs.
-
+6. Work with carriers and review delivery estimates in the worst-performing north-eastern states (AL, MA, PI, CE, SE, BA).
+ 
 ## Limitations
 Data covers 2016-2018 from one marketplace, shows associations (not proof of cause), and repeat purchases are only measured within the dataset window.
 
