@@ -30,7 +30,7 @@ Python (pandas), SQL (SQLite), Power BI, Google Colab
 5. Late delivery sharply lowers reviews, and the damage grows with the delay: 4.29 (on time), 3.75 (1-3 days late), 2.30 (4-7 days late), 1.73 (8+ days late).
 6. Late orders are 8.1% of orders but account for 33.8% of all bad (1-2 star) reviews, about four times their share, and hold 1.16M (8.8%) of revenue.
 7. Customers whose first order was late repeat at 2.51%, versus 3.04% for on-time first orders. Delivery matters, but it does not explain the low retention on its own.
-8. Delivery performance varies widely by state: late-delivery rates range from about 5% in PR, MG and SP to over 20% in AL and MA, with most of the worst states in the north-east.
+8. Delivery performance varies widely by state: late-delivery rates are about 5% in PR and under 6% in SP and MG, but reach 23.9% in AL and 19.7% in MA. Six of the eight worst states (AL, MA, PI, CE, SE, BA) are in the north-east. Rio de Janeiro, the second-largest market by revenue, is also among the worst at 13.5% (about 1,700 late orders).
 
 ## Recommendations
 1. Prioritize severe delays (4+ days late): about 5,000 orders with an average review below 2.0.
@@ -38,8 +38,7 @@ Python (pandas), SQL (SQLite), Power BI, Google Colab
 3. Reduce dependence on Sao Paulo by testing growth campaigns in RJ and MG, the next two largest markets.
 4. Promote high-value categories like watches_gifts and cross-sell in high-volume, lower-value ones like bed_bath_table.
 5. Track repeat rate, late-delivery rate and average review monthly as core KPIs.
-6. Work with carriers and review delivery estimates in the worst-performing north-eastern states (AL, MA, PI, CE, SE, BA).
- 
+6. Prioritize Rio de Janeiro first, since it combines high volume with a 13.5% late rate, then the north-eastern states with the highest late rates (AL, MA, PI, CE, SE, BA). Review carrier performance and delivery estimates the
 ## Limitations
 Data covers 2016-2018 from one marketplace, shows associations (not proof of cause), and repeat purchases are only measured within the dataset window.
 
